@@ -1,0 +1,61 @@
+@import './variables';
+.page {
+  .header {
+    height: 15.625rem;
+    border-bottom: 0.0625rem solid $primary--color;
+    .headerColumn {
+      display: flex;
+      .column {
+        width: 33.33%;
+        margin-top: 2.5rem;
+        &.first {
+          display: flex;
+          .content {
+            padding-left: 1.25rem;
+            h1 {
+              color: $primary--color;
+            }
+            h3 {
+              color: $secondary--color;
+            }
+            a {
+              color: black;
+            }
+          }
+        }
+        &.seconds {
+          justify-content: center;
+          display: flex;
+          img {
+            width: 9.375rem;
+            height: 9.375rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: solid 0.3125rem $secondary--color;
+          }
+        }
+      }
+    }
+  }
+  .body {
+    display: flex;
+    &.secondPage {
+      padding-top: 2.5rem;
+    }
+    .column {
+      width: 50%;
+      &.left {
+        h2 {
+          padding-left: 3.75rem;
+        }
+      }
+      &.right {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+    }
+  }
+  .experienceCardCustom {
+    padding-bottom: 0.9375rem;
+  }
+}

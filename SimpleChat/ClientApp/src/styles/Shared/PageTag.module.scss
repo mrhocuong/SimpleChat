@@ -1,0 +1,9 @@
+@import '../variables';
+.tag {
+  width: 2.5rem;
+  height: 4.375rem;
+  background-color: $primary--color;
+  &.secondary {
+    background-color: $secondary--color;
+  }
+}

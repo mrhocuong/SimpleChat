@@ -1,0 +1,25 @@
+@import '../variables';
+.workExperience {
+  .headerWrapper {
+    display: flex;
+    .header {
+      padding-left: 1.25rem;
+      .title {
+        font-size: 1.25rem;
+      }
+      .subtitle,
+      .note {
+        font-size: 0.9rem;
+        color: $secondary--color;
+        font-style: italic;
+        line-height: 1.25rem;
+      }
+    }
+  }
+  .content {
+    padding-left: 2.5rem;
+    li {
+      line-height: 1.5625rem;
+    }
+  }
+}

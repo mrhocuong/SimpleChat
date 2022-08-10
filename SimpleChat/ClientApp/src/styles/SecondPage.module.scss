@@ -1,0 +1,24 @@
+@import './variables';
+.page {
+  .body {
+    display: flex;
+    &.secondPage {
+      padding-top: 2.5rem;
+    }
+    .column {
+      width: 50%;
+      &.left {
+        h2 {
+          padding-left: 3.75rem;
+        }
+      }
+      &.right {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+    }
+  }
+  .experienceCardCustom {
+    padding-bottom: 0.9375rem;
+  }
+}

@@ -1,10 +1,16 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import Style from '../styles/pages/ChatWithMe.module.scss';
 import avatar from '../assets/avatar.jpg';
 import devAvatar from '../assets/dev-avarta.jpeg';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
+import {
+  HubConnection,
+  HubConnectionBuilder,
+  HubConnectionState,
+} from '@microsoft/signalr';
+import { v4 as uuidv4 } from 'uuid';
 
 interface IMessageModel {
   id: string;
@@ -14,7 +20,32 @@ interface IMessageModel {
 }
 const ChatWithMe: FC = () => {
   const navigate = useNavigate();
+  const [connection, setConnection] = useState<HubConnection | null>(null);
 
+  useEffect(() => {
+    const connection = new HubConnectionBuilder()
+      .withUrl('/hub/chatWithMe', {
+        accessTokenFactory: async () => {
+          return uuidv4();
+        },
+        withCredentials: false,
+      })
+      .build();
+    setConnection(connection);
+  }, []);
+
+  useEffect(() => {
+    
+    if (connection && connection.state !== HubConnectionState.Connected) {
+      connection.on('receiveMessage', (message: string) => {
+        console.log(message);
+      });
+      connection.start().catch((err) => {
+        console.log('aa???', err);
+      });
+    }
+  }, [connection]);
+  
   const userId = 1;
   const chatConst: IMessageModel[] = [
     {
@@ -26,7 +57,7 @@ const ChatWithMe: FC = () => {
     {
       id: '2',
       senderId: userId + 1,
-      senderName: 'Guest',
+      senderName: 'Guest  12',
       message: 'hello back',
     },
     {

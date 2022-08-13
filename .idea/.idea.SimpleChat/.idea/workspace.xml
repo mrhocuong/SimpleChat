@@ -8,9 +8,21 @@
     <projectFile profileName="SimpleChat">SimpleChat/SimpleChat.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c413777-b491-4148-b3fd-5eb5260a699b" name="Changes" comment="">
+    <list default="true" id="1c413777-b491-4148-b3fd-5eb5260a699b" name="Changes" comment="merged clientapp">
+      <change afterPath="$PROJECT_DIR$/SimpleChat.Application/Base/ISignalRConnectionTrackingService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleChat.Application/Base/SignalRConnectionModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleChat.Application/Chat/ChatService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleChat.Application/Hubs/ChatHub.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleChat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleChat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleChat.Domain/Entities/MessageEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleChat.Domain/Entities/MessageEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleChat.Application/SimpleChat.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleChat.Application/SimpleChat.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleChat.Infrastructure/SimpleChat.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleChat.Infrastructure/SimpleChat.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleChat/ClientApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleChat/ClientApp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleChat/ClientApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleChat/ClientApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleChat/ClientApp/src/pages/ChatWithMe.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleChat/ClientApp/src/pages/ChatWithMe.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleChat/ClientApp/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleChat/ClientApp/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleChat/Hubs/ChatHub.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleChat/SimpleChat.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleChat/SimpleChat.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleChat/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleChat/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,14 +32,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c1ca262d468b4bcb96b7e2aae3a36d848d7e00/228/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bdd96c5f630a45298dacc07d80deb23b27800/D/CallSiteFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SimpleChat.Application/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SimpleChat.Domain/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c1ca262d468b4bcb96b7e2aae3a36d848d7e00/da/0b2a2d53/IDictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SimpleChat/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SimpleChat.Domain/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SimpleChat/ClientApp/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
     <bower.json value="" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21e5nm0JHizDJSOnrDgE0MzAE3A" />
   <component name="ProjectLevelVcsManager">
@@ -37,13 +64,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34986636" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.SimpleChat">
     <configuration name="SimpleChat" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/SimpleChat/SimpleChat.csproj" />
@@ -87,7 +117,8 @@
       <workItem from="1638288889571" duration="1188000" />
       <workItem from="1638290396126" duration="1647000" />
       <workItem from="1648360918248" duration="719000" />
-      <workItem from="1660144672485" duration="259000" />
+      <workItem from="1660144672485" duration="530000" />
+      <workItem from="1660385264153" duration="4878000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1638291172022</created>
@@ -103,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638292057147</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="merged clientapp">
+      <created>1660145577009</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660145577009</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,13 +160,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init project" />
     <MESSAGE value="update" />
     <MESSAGE value="init enitty model" />
-    <option name="LAST_COMMIT_MESSAGE" value="init enitty model" />
+    <MESSAGE value="merged clientapp" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged clientapp" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

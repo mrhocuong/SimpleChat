@@ -1,14 +1,16 @@
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace SimpleChat.Domain.Entities
 {
     public class ChannelEntity
     {
-        public long Id { get; set; }
-        public string Name { get; set; }
-        public ChannelType ChannelType { get; set; }
-        public long CreatedBy { get; set; }
-        public UserEntity CreatedByEntity { get; set; }
-        public ICollection<MessageEntity> Messages { get; set; }
+        [Key] public Guid Guid { get; set; }
+        public string? Name { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public Guid CreatedBy { get; set; }
+        public UserEntity? CreatedByEntity { get; set; }
+        public ICollection<MessageEntity>? Messages { get; set; }
     }
 }

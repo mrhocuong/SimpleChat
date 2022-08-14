@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using SimpleChat.Application.Base;
 using SimpleChat.Application.Hubs;
 using SimpleChat.Infrastructure;
+using SimpleChat.Infrastructure.Persistence;
 
 namespace SimpleChat
 {
@@ -27,6 +28,7 @@ namespace SimpleChat
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddPersistence(Configuration);
             services.AddControllersWithViews();
             services.AddSingleton<ISignalRConnectionTrackingService, SignalRConnectionTrackingService>();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();

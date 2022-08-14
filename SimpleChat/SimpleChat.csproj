@@ -12,6 +12,10 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.12">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
 
     <ItemGroup>
@@ -23,6 +27,7 @@
 
     <ItemGroup>
         <Folder Include="Controllers" />
+        <Folder Include="Migrations" />
     </ItemGroup>
 
     <ItemGroup>
@@ -33,6 +38,11 @@
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Pages\Error.cshtml" />
       <_ContentIncludedByDefault Remove="Pages\_ViewImports.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Migrations\AppDbContextModelSnapshot.cs" />
+      <Compile Remove="Migrations\20220814174351_InitialCreate.Designer.cs" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
